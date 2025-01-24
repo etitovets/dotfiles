@@ -3,7 +3,7 @@ WORKDIR /app
 COPY . .
 RUN rm -rf node_modules package-lock.json
 RUN npm i --force --foreground-scripts
-RUN npm run build lmsn -- --prod --output-path=/dist --skip-nx-cache --base-href="/lmsn/"
+RUN npm run build lmsn -- --prod --output-path=/dist --skip-nx-cache --base-href="/"
 ################
 # Run in NGINX #
 ################
